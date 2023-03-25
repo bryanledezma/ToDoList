@@ -10,9 +10,9 @@ import { TodoItem} from "./components/TodoItem";
 import { TodoForm} from "./components/TodoForm";
 
 const defaultTodos = [
-  { text: 'Ejemplo 1', completed: true },
-  { text: 'Ejemplo 2', completed: false },
-  { text: 'Ejemplo 3', completed: false },
+  { text: 'Estudiar', completed: true },
+  { text: 'Ir de compras', completed: false },
+  { text: 'Ir al gimnasio', completed: false },
 ];
 
 function App() {
@@ -36,8 +36,6 @@ function App() {
 
   const addTodo = (newTodo) =>{
     const nombre = newTodo;
-    console.log(nombre, ' de tipo', typeof(nombre));
-
     const nuevo = {text:nombre, completed:false};
 
     

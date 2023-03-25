@@ -8,7 +8,9 @@ export const TodoForm = ({addTodo}) => {
     const onSubmit = e =>{
         e.preventDefault();
         const todo = e.target.newTodo.value;
+        e.target.newTodo.value = "";
         sendTodo(todo);
+        setDescription('');
     };
 
 
