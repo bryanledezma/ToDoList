@@ -65,12 +65,15 @@ function App() {
   
   return(
     <Container>
+
+<NewTodoContainer>
+    <TodoForm addTodo={addTodo} ></TodoForm>
+  </NewTodoContainer>
+
   <TodoListContainer>
     <TodoSearch searchValue={searchValue} setSearchValue={setSearchValue} />
     <TodoCounter total={totalTodos} completed={completedTodos} />
     <TodoList>
-    
-
       {searchedTodos.map(todo =>(
       <TodoItem 
       key={todo.text} 
@@ -82,11 +85,6 @@ function App() {
       ))}
     </TodoList>
   </TodoListContainer>
-
-  <NewTodoContainer>
-    <TodoForm addTodo={addTodo} ></TodoForm>
-  </NewTodoContainer>
-
   
 </Container>
 );

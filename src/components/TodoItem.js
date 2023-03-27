@@ -1,12 +1,7 @@
-import react from "react";
+
 import './TodoItem.css';
 
 function TodoItem(props){
-   
-    const onDelete = ()=>{
-        alert("Eliminaste " + props.text);
-    }
-
 
     return(
         <li className={`TodoItem ${props.completed && 'TodoItem-p--completed'}`}>

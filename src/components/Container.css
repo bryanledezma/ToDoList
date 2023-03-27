@@ -1,9 +1,17 @@
 .Container{
-    display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  
+  display: grid;
+  justify-content: center;
+  margin-top: 5%;
 }
 
-.Container > div {
-    width: 30%;
-  }
+
+
+  @media (max-width: 800px){
+        
+    .Container{
+        display: block;
+        margin-top: 0px;
+    }
+
+}

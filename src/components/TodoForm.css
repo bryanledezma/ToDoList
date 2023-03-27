@@ -1,63 +1,48 @@
-.newTodoInput {
-    padding: 12px;
-    width: 19vmax;
-    font-size: 13px;
+.todoForm{
+    display: grid;
+    justify-content: center;
+}
+
+.newTodoInput{
+    height: 20px;
+    border-radius: 3px;
     border: 0px;
-    border-bottom: solid white 3px;
-    background-color: rgba(0,0,0,0);
-    color: white;
-    font-size: 15px;
-    border-radius: 4px;
-    box-shadow: none;
-    text-shadow:0px 0px 3px #d79cff;
-    box-shadow: 0px 20px 10px -15px #BC6FF1;
-    margin-left: 2vw;
-    margin-top: 1vh;
-}
-.newTodoInput:focus {
-    outline:none;
-    
+    margin-top: 15px;
 }
 
-.newTodoInput::placeholder{
-    color: white;
-    text-shadow: 0px 0px 10px 5px #d79cff;
+.createTodo{
+ margin-top: 0%;
+ background-color: #652AB1;
+ width: 70%;
+ margin-left: 15%;
+ color: #ffffff;
+ font-family: Trebuchet MS;
+ font-weight:bold;
+ text-decoration: none;
+ border: 2px solid white;
+ border-radius: 2px;
+}
+.createTodo:hover{
+ background-color: #904AEB;
+}
+.createTodo:active{
+ transform: scale(0.95);
 }
 
-.labelNewTodo{
-    margin-left: 2vw;
-    font-family: calibri;
-    color: white;
-    text-shadow:0px 0px 25px #d79cff;
-    font-weight: bold;
-    letter-spacing: -0.9px;
-    font-size: 20px;
-}
-
-.createTodo {
-	background-color:#892CDC;
-	border-radius:10px;
-	border: none;
-	display:inline-block;
-	cursor:pointer;
-	font-family: Sans-serif;
-	color:#e9e2d6;
-	font-size:13px;
-	padding:15px 20px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #000000;
-    margin-left: 35%;
-	margin-top: 4vh;
-}
-.createTodo:hover {
-	background-color:#BC6FF1;
-	box-shadow: 0px 0px 45px 4px rgba(188,111,241,0.72);
--webkit-box-shadow: 0px 0px 45px 4px rgba(188,111,241,0.72);
--moz-box-shadow: 0px 0px 45px 4px rgba(188,111,241,0.72);
-}
-.createTodo:active {
-	position:relative;
-	top:1px;
-}
-
+@media (max-width: 800px){
         
+    .createTodo{
+      height: 150%;
+      width: 100%;
+      margin-top: 15px;
+      margin-left: 5%;
+    }
+
+    .newTodoInput{
+      height: 35px;
+      width: 140%;
+      margin-left: -20%;
+      margin-top: 20px;
+    }
+
+}
