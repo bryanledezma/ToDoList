@@ -1,4 +1,4 @@
-import react from "react";
+
 import './TodoSearch.css';
 
 function TodoSearch({searchValue, setSearchValue}){
@@ -8,10 +8,15 @@ const onSearchValueChange = (event) =>{
     setSearchValue(event.target.value);
 }
 
+const cleanTodoSearch = (event) =>{
+    setSearchValue('');
+}
+
     return(
-        <react.Fragment>
-        <input className="todoSearch" placeholder="Buscar" value={searchValue} onChange={onSearchValueChange}/>
-        </react.Fragment>
+        <div className="searchForm">
+        <input className="todoSearch" name="todoSearch" placeholder="Buscar" value={searchValue} onChange={onSearchValueChange}></input>
+        <button onClick={cleanTodoSearch} className="cleanTodoSearch">X</button>
+        </div>
         
     );
 }

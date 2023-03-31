@@ -5,13 +5,9 @@ function TodoItem(props){
 
     return(
         <li className={`TodoItem ${props.completed && 'TodoItem-p--completed'}`}>
-            <button className={`checkButton ${props.completed && 'checkButton--completed'}`} onClick={props.onComplete}>
-                <span className="icon gg-check" ></span>
-            </button>
-            {props.text} 
-            <button className="x"  onClick={props.onDelete}>
-                <span className="icon gg-close"></span>
-            </button>
+            <button className={`checkButton ${props.completed && 'checkButton--completed'}`} onClick={props.onComplete}>✔</button>
+            <p>{props.text}</p> 
+            <button className="x"  onClick={props.onDelete}>✘</button>
         </li>
     );
 }

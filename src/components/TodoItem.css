@@ -1,0 +1,82 @@
+
+.TodoItem{
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: white; 
+    margin-top: 10px;
+    border-radius: 15px;
+    font-family: 'Trebuchet MS';
+    font-size: 18px;
+    list-style-type:none;
+    height: 55px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.TodoItem > p{
+    margin: 0px
+}
+
+.TodoItem-p--completed > p{
+    text-decoration: line-through;
+    color: rgb(137, 137, 137);
+}
+
+.x{
+    float: right;
+    color: black;
+    font-size: 15px;
+    padding: 0px;
+    width:20px;
+    height:20px;
+    border: black 1px solid;
+    border-radius: 3px;
+    background:white;
+    text-decoration: none;
+}
+
+.x:hover {
+   
+    background: rgb(218, 32, 32);
+    box-shadow: 1px 0px 18px 4px rgb(218, 32, 32);
+    text-decoration: none;
+  }
+
+.checkButton{
+    padding: 0px;
+    margin-right: 5px;
+    width:20px;
+    height:20px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background:white;
+    text-decoration: none;
+                
+}
+
+.checkButton:hover, .checkButton--completed {
+    background: rgba(188, 111, 241, 1);
+    box-shadow: 1px 0px 18px 4px rgba(188, 111, 241, 1);
+    text-decoration: none;
+  }
+
+  @media (max-width: 800px){
+        
+    .TodoItem{
+        font-size: 21px;
+    }
+    .checkButton{
+        height: 30px;
+        width: 30px;
+    }
+    .x{
+        height: 30px;
+        width: 30px;
+    }
+
+
+}

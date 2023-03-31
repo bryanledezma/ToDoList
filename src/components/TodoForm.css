@@ -1,18 +1,29 @@
 .todoForm{
     display: grid;
     justify-content: center;
+    
 }
 
 .newTodoInput{
-    height: 20px;
+    height: 25px;
     border-radius: 3px;
     border: 0px;
-    margin-top: 15px;
+    margin-top: 18px;
+    
+}
+
+.newTodoInput:focus{
+  outline: none;
+}
+
+.newTodoInput::placeholder{
+  color:#bea8ff;
 }
 
 .createTodo{
- margin-top: 0%;
+ margin-top: 12px;
  background-color: #652AB1;
+ height: 30px;
  width: 70%;
  margin-left: 15%;
  color: #ffffff;
@@ -31,17 +42,24 @@
 
 @media (max-width: 800px){
         
+
+  .todoForm{
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+  }
     .createTodo{
-      height: 150%;
-      width: 100%;
-      margin-top: 15px;
-      margin-left: 5%;
+      height: 70px;
+      margin-bottom: 0px;
+      margin-top: 20px;
+      font-size: 17px;
     }
 
     .newTodoInput{
       height: 35px;
-      width: 140%;
-      margin-left: -20%;
+      font-size: 17px;
       margin-top: 20px;
     }
 

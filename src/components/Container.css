@@ -2,7 +2,8 @@
   
   display: grid;
   justify-content: center;
-  margin-top: 5%;
+  grid-template-columns: 1;
+  margin-top: 1%;
 }
 
 
@@ -10,8 +11,9 @@
   @media (max-width: 800px){
         
     .Container{
-        display: block;
-        margin-top: 0px;
+      display: grid;
+      grid-template-columns: 1;
+      margin-top: 0px;
     }
 
 }
